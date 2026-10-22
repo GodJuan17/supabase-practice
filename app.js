@@ -43,7 +43,7 @@ form.addEventListener('submit', async (e) =>{
     if(insertError) {
         throw new Error(`Error al insertar: ${insertError.message}`);
     }
-
+    //probando
     //Existo se registro
     messageElement.style.color = 'green';
     messageElement.textContent = 'Registro completado!';
