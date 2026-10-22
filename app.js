@@ -3,7 +3,7 @@ const SUPABASE_KEY = "sb_publishable_z7eqI_3OirRCJE8iLrbyvw_41_I72jn";
 const supabase_client = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 const form = document.getElementById("register-form");
 const messageElement = document.getElementById("message");
-form.addEventListener("submit", async (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const email = document.getElementById("email").value.trim();
   messageElement.style.color = "black";
