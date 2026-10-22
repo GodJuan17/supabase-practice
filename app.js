@@ -20,7 +20,9 @@ form.addEventListener('submit', async (e) => {
         else {
             messageElement.textContent = `Error: ${error.message}`;
         }
+        return;
     }
+
     messageElement.style.color = 'green';
     messageElement.textContent = '¡Registro exitoso!';
     form.reset();
